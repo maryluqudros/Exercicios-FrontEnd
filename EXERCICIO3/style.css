@@ -1,0 +1,68 @@
+.caixa{
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+    display: table;
+    text-align: center;
+    padding: 0 25px;
+    position: absolute;
+    border: solid thin #ccc;
+}
+
+.caixa p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*ANIMAÇÃO - WEBKIT*/
+@-webkit-keyframes anime{
+    0%{
+        background: #fff;
+        opacity: 0;
+    }
+    40%{
+        background: #fff;
+        opacity: 0;
+    }
+    50%{ 
+        background-color: #d83061;
+        opacity: 1;
+    }
+    90%{
+        background-color: #d83061;
+        opacity: 1;
+    }
+    100%{
+        background: #fff;
+        opacity: 0;
+    }
+}
+.animeGo{
+    -webkit-animation: anime is ease .5s infinite alternate running;
+}
+/* ANIMAÇÃO PADRÃO*/
+@keyframes anime{
+    0%{
+        background: #fff;
+        opacity: 0;
+    }
+    40%{
+        background: #fff;
+        opacity: 0;
+    }
+    50%{ 
+        background-color: #d83061;
+        opacity: 1;
+    }
+    90%{
+        background-color: #d83061;
+        opacity: 1;
+    }
+    100%{
+        background: #fff;
+        opacity: 0;
+    }
+}
+.animeGo{
+    -webkit-animation: anime 3s;
+}
