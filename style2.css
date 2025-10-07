@@ -1,0 +1,11 @@
+.caixa{
+    background-color: #fff;
+    width: 150px;
+    padding: 30px;
+    border: solid thin #Ccc;
+    transition: backgroud-color 3s ease 0, width 12 ease 0;
+}
+.caixa:hover{
+    background-color: #8c232c;
+    width: 400px;
+}
